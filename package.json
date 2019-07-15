@@ -1,0 +1,47 @@
+{
+  "name": "vuetify-nuxt-auth-starter",
+  "version": "1.0.0",
+  "description": "vuetify express and nuxt auth starter",
+  "author": "awsaf",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.8.1",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "body-parser": "^1.19.0",
+    "consola": "^2.9.0",
+    "cookie-parser": "^1.4.4",
+    "cross-env": "^5.2.0",
+    "dotprop": "^1.2.0",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/eslint-module": "^0.0.1",
+    "@nuxtjs/vuetify": "^1.0.0-beta.6",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jest": ">=22.3.0",
+    "eslint-plugin-node": ">=8.0.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "nodemon": "^1.18.9",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
